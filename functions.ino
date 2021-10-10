@@ -9,7 +9,7 @@ void connect_via_ssh()
   Keyboard.press('2');
   delay(100);
   Keyboard.releaseAll();
-  //delay(200);
+  delay(200);
   Keyboard.println(String("ssh ")+USER+String("@")+HOSTNAME);
   delay(1500);
   Keyboard.println(PASSWORD);
@@ -21,6 +21,15 @@ void disconnect_from_ssh()
   Keyboard.println("exit");
   delay(2000);
   Keyboard.println("exit");
+}
+
+void run_vs_code()
+{
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.press(KEY_LEFT_ALT);
+  Keyboard.press('n');
+  delay(200);
+  Keyboard.releaseAll();
 }
 
 void play_on_youtube(String link)
@@ -59,4 +68,12 @@ void turn_off_light()
   delay(700);
   disconnect_from_ssh();
   
+}
+
+void upload_sketch()
+{
+   Keyboard.press(KEY_LEFT_CTRL);
+   Keyboard.press('U');
+   delay(200);
+   Keyboard.releaseAll();
 }

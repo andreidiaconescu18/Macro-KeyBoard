@@ -67,7 +67,17 @@ void PS2_F12_handle()
   play_on_youtube("https://youtu.be/GLHXZDORBjQ?t=31");
 }
 
+void PS2_U_handle()
+{
+  print_not_implement();
+}
+
 void PS2_O_handle()
 {
   play_on_youtube("https://youtu.be/YnopHCL1Jk8");
+}
+
+void PS2_SPACE_handle()
+{
+  run_vs_code();
 }

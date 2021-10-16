@@ -77,6 +77,27 @@ void PS2_O_handle()
   play_on_youtube("https://youtu.be/YnopHCL1Jk8");
 }
 
+void PS2_UPARROW_handle()
+{
+  move_mouse_up_whiteboard();
+}
+
+void PS2_DOWNARROW_handle()
+{
+  move_mouse_down_whiteboard();
+}
+
+void PS2_LEFTARROW_handle()
+{
+  move_mouse_left_whiteboard();
+}
+
+void PS2_RIGHTARROW_handle()
+{
+   move_mouse_right_whiteboard();
+}
+
+
 void PS2_SPACE_handle()
 {
   run_vs_code();

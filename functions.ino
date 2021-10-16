@@ -23,14 +23,34 @@ void disconnect_from_ssh()
   Keyboard.println("exit");
 }
 
-void run_vs_code()
+void move_mouse_up_whiteboard()
 {
-  Keyboard.press(KEY_LEFT_CTRL);
-  Keyboard.press(KEY_LEFT_ALT);
-  Keyboard.press('n');
-  delay(200);
-  Keyboard.releaseAll();
+  Mouse.press();
+  Mouse.move(0,3,0);
+  Mouse.release();
 }
+
+void move_mouse_down_whiteboard()
+{
+  Mouse.press();
+  Mouse.move(0,-3,0);
+  Mouse.release();
+}
+
+void move_mouse_left_whiteboard()
+{
+  Mouse.press();
+  Mouse.move(3,0,0);
+  Mouse.release();
+}
+
+void move_mouse_right_whiteboard()
+{
+  Mouse.press();
+  Mouse.move(-3,0,0);
+  Mouse.release();
+}
+
 
 void play_on_youtube(String link)
 {
@@ -51,6 +71,15 @@ void print_not_handled()
  {
   Keyboard.println("Not handled");
  }
+
+void run_vs_code()
+{
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.press(KEY_LEFT_ALT);
+  Keyboard.press('n');
+  delay(200);
+  Keyboard.releaseAll();
+}
 
 void turn_on_light()
 {

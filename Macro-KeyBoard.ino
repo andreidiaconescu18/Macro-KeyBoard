@@ -43,24 +43,9 @@ void loop() {
     case PS2_DOWNARROW: PS2_DOWNARROW_handle(); break; 
     case PS2_LEFTARROW: PS2_LEFTARROW_handle(); break;
     case PS2_RIGHTARROW: PS2_RIGHTARROW_handle(); break; 
+    case PS2_SCROLL: PS2_SCROLL_handle(); break;
     default: print_not_handled();
     }
-    /*    
-    }else if (c == PS2_ENTER) {
-      Serial.println();
-    } else if (c == PS2_TAB) {
-      Serial.print("[Tab]");
-    } else if (c == PS2_PAGEDOWN) {
-      Serial.print("[PgDn]");
-    } else if (c == PS2_PAGEUP) {
-      Serial.print("[PgUp]");
-
-
-    } else if (c == PS2_DELETE) {
-      Serial.print("[Del]");
-      
-    
-      
-    }*/
+   
   }
 }

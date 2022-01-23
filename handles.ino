@@ -67,6 +67,11 @@ void PS2_F12_handle()
   play_on_youtube("https://youtu.be/GLHXZDORBjQ?t=31");
 }
 
+void PS2_SCROLL_handle()
+{
+  set_arduino_rights();
+}
+
 void PS2_U_handle()
 {
   print_not_implement();

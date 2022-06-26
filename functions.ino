@@ -130,3 +130,35 @@ void upload_sketch()
    delay(200);
    Keyboard.releaseAll();
 }
+
+void set_dp(int monitor)
+{
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.press(KEY_LEFT_ALT);
+  if(monitor==1)
+  {
+    Keyboard.press(0xE1);
+  }
+  else
+  {
+    Keyboard.press(0xE3);
+  }
+  delay(200);
+  Keyboard.releaseAll();
+}
+
+void set_hdmi(int monitor)
+{
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.press(KEY_LEFT_ALT);
+  if(monitor==1)
+  {
+    Keyboard.press(0xE2);
+  }
+  else
+  {
+    Keyboard.press(0xE4);
+  }
+  delay(200);
+  Keyboard.releaseAll();
+}

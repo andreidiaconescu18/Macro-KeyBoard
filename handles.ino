@@ -19,7 +19,7 @@ void PS2_F2_handle()
 
 void PS2_F3_handle()
 {
-  print_not_implement();
+  play_on_youtube("https://youtu.be/GLHXZDORBjQ?t=31");
 }
 
 void PS2_F4_handle()
@@ -49,22 +49,22 @@ void PS2_F8_handle()
 
 void PS2_F9_handle()
 {
-  print_not_implement();
+  set_dp(1);
 }
 
 void PS2_F10_handle()
 {
-  print_not_implement();
+  set_hdmi(1);
 }
 
 void PS2_F11_handle()
 {
-  print_not_implement();
+  set_dp(2);
 }
 
 void PS2_F12_handle()
 {
-  play_on_youtube("https://youtu.be/GLHXZDORBjQ?t=31");
+   set_hdmi(2);
 }
 
 void PS2_SCROLL_handle()
